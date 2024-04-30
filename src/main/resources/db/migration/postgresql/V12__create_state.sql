@@ -1,0 +1,6 @@
+CREATE TABLE tb_states (
+    state_id SMALLSERIAL PRIMARY KEY,
+    state_name VARCHAR (30) NOT NULL UNIQUE,
+    state_uf VARCHAR (2) NOT NULL,
+    state_created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
